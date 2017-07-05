@@ -2,32 +2,13 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3">
-      <div class="row">
-        <!--PAGE HEADER-->
-        <div class="page-header">
-          <h1>Angular 4 <small>learning by doing</small></h1>
-        </div>
-      </div>
-      <div class="row">
-        <!--WARNING ALERT-->
-        <div class="panel panel-warning" role="alert">
-          <div class="panel-heading">
-            <strong>Warning!</strong> (warning-alert-component)
-          </div>
-          <div class="panel-body">
-            <app-warning-alert></app-warning-alert>
-          </div>
-        </div>
-        <!--SUCCESS ALERT-->
-        <div class="panel panel-success" role="alert">
-          <div class="panel-heading">
-            <strong>Success!</strong> (success-alert-component)
-          </div>
-          <div class="panel-body">
-            <app-success-alert></app-success-alert>
-          </div>
-        </div>
-      </div>
+      <!--PAGE HEADER-->
+      <app-page-header></app-page-header>
+      <!--SERVER COMPONENTS-->
+      <app-servers></app-servers>
+      <!--ALERT COMPONENTS-->
+      <app-success-alert></app-success-alert>
+      <app-warning-alert></app-warning-alert>
     </div>
   </div>
 </div>
