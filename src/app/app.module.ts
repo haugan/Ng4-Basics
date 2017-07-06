@@ -25,4 +25,4 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { } 
+export class AppModule { }

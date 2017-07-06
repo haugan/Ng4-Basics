@@ -1,13 +1,36 @@
 <div class="row">
+  <!--PANEL-->
   <div class="panel panel-info" role="alert">
+    <!--HEADING-->
     <div class="panel-heading">
-      <button class="btn btn-default">
-        <span class="glyphicon glyphicon-plus"></span>
-         Add service
-        </button>
+      <!--INPUT GROUP-->
+      <div class="input-group">
+        <!--EVENT BINDED INPUT-->
+        <input type="text"
+               placeholder="Event binding"
+               class="form-control"
+               (input)="onUpdateServerName($event)">
+        <!--TWOWAY DATA BINDED INPUT-->
+        <input type="text"
+               placeholder="Two-way data binding"
+               class="form-control"
+               [(ngModel)]="serverName">
+        <!--ADD BUTTON-->
+        <span class="input-group-btn">
+          <button class="btn btn-primary"
+                  [disabled]="!allowNewServer"
+                  (click)="onCreateServer()">
+            Add {{serverName}} server
+          </button>
+        </span>
+      </div>
     </div>
+    <!--PANEL BODY / LIST ITEMS-->
     <ul class="list-group">
-      <li class="list-group-item"><app-server></app-server></li>
+      <li class="list-group-item">{{serverCreationStatus}}</li>
+      <li class="list-group-item">
+        <app-server></app-server>
+      </li>
     </ul>
   </div>
 </div>
