@@ -1,5 +1,5 @@
 # Ovis
 
-Learning Angular while following a great Udemy course, and playing around (of course)!
+Learning Angular while following a great Udemy course, and playing around ("off course")!
 
-![Two way event / property data binding](https://s12.postimg.org/habe0f819/ng-data-binding-demo1.gif)
+<iframe src="https://giphy.com/embed/3o7bufxA61U41zG1Ow" width="371" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3o7bufxA61U41zG1Ow">via GIPHY</a></p>
