@@ -1,6 +1,6 @@
 <div class="row">
   <!--PANEL-->
-  <div class="panel panel-info" role="alert">
+  <div class="panel panel-info">
     <!--HEADING-->
     <div class="panel-heading">
       <!--INPUT GROUP-->
@@ -22,10 +22,12 @@
     </div>
     <!--PANEL BODY / LIST ITEMS-->
     <ul class="list-group">
-      <li class="list-group-item">{{serverAddStatus}}</li>
-      <li class="list-group-item">
-        <app-server></app-server>
+      <li class="list-group-item"
+          *ngIf="serverCreated">
+        {{serverAddStatus}}
       </li>
+      <!--DYNAMICALLY STYLED SERVER LIST ITEM-->
+      <app-server></app-server>
     </ul>
   </div>
 </div>
