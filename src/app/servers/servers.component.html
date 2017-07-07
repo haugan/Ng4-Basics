@@ -5,21 +5,16 @@
     <div class="panel-heading">
       <!--INPUT GROUP-->
       <div class="input-group">
-        <!--EVENT BINDED INPUT-->
-        <input type="text"
-               placeholder="Event binding"
-               class="form-control"
-               (input)="onUpdateServerName($event)">
         <!--TWOWAY DATA BINDED INPUT-->
         <input type="text"
-               placeholder="Two-way data binding"
                class="form-control"
+               placeholder="Two-way data binded server name"
                [(ngModel)]="serverName">
         <!--ADD BUTTON-->
         <span class="input-group-btn">
           <button class="btn btn-primary"
-                  [disabled]="!allowNewServer"
-                  (click)="onCreateServer()">
+                  [disabled]="serverName === ''"
+                  (click)="onAddServer()">
             Add {{serverName}} server
           </button>
         </span>
@@ -27,7 +22,7 @@
     </div>
     <!--PANEL BODY / LIST ITEMS-->
     <ul class="list-group">
-      <li class="list-group-item">{{serverCreationStatus}}</li>
+      <li class="list-group-item">{{serverAddStatus}}</li>
       <li class="list-group-item">
         <app-server></app-server>
       </li>
