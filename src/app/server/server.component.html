@@ -1,4 +1,5 @@
 <li class="list-group-item"
-    [ngStyle]="{color: getStatusColor()}">
+    [ngStyle]="{color: getStatusColor()}"
+    [ngClass]="{online: serverStatus === 'online'}">
   {{'Server'}} with ID: {{serverId}} is {{getServerStatus()}}.
 </li>
