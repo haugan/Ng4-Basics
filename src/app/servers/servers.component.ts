@@ -13,6 +13,7 @@ export class ServersComponent implements OnInit {
   serverAddStatus = 'No server is created.';
   serverCreated = false;
   serverName = '';
+  servers = [''];
 
   ngOnInit() {
   }
@@ -21,5 +22,6 @@ export class ServersComponent implements OnInit {
     this.serverAddStatus = `New server was added! (Name: ${this.serverName})`;
     this.serverCreated = true;
     this.serverName = '';
+    this.servers.push(this.serverName);
   }
 }

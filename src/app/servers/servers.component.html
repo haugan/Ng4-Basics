@@ -1,9 +1,8 @@
 <div class="row">
-  <!--PANEL-->
   <div class="panel panel-info">
     <!--HEADING-->
     <div class="panel-heading">
-      <!--INPUT GROUP-->
+      <!--ADD SERVER INPUT GROUP-->
       <div class="input-group">
         <!--TWOWAY DATA BINDED INPUT-->
         <input type="text"
@@ -26,8 +25,8 @@
           *ngIf="serverCreated">
         {{serverAddStatus}}
       </li>
-      <!--DYNAMICALLY STYLED SERVER LIST ITEM-->
-      <app-server></app-server>
+      <!--DYNAMIC SERVER LIST ITEMS-->
+      <app-server *ngFor="let s of servers"></app-server>
     </ul>
   </div>
 </div>

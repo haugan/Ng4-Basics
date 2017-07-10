@@ -8,15 +8,17 @@ import { ServersComponent } from './servers/servers.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { UsernameComponent } from './username/username.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    PageHeaderComponent,
     ServerComponent,
     ServersComponent,
-    PageHeaderComponent,
-    WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    UsernameComponent,
+    WarningAlertComponent
   ],
   imports: [
     BrowserModule,

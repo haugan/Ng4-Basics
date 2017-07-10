@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="panel panel-danger" role="alert">
+    <div class="panel-heading">
+      <button class="btn btn-info"
+              (click)="onShowDetailsBtnClick()">
+        Toggle user details
+      </button>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item"
+          *ngIf="showDetails">
+        Username: {{username}}
+      </li>
+      <li class="list-group-item"
+          *ngIf="showDetails">
+        Password: {{password}}
+      </li>
+      <li class="list-group-item"
+          *ngFor="let logItem of log; let i = index"
+          [ngStyle]="{backgroundColor: (i >= 2) ? 'blue' : 'transparent'}"
+          [ngClass]="{'white-text': i >= 2}">
+        {{logItem}}
+      </li>
+    </ul>
+  </div>
+</div>
